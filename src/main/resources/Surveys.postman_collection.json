@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "52ee5850-891c-4463-8f02-031722276acf",
+		"name": "Surveys",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\r\n\t\"customer\":\r\n\t{\r\n\t\t\"name\": \"\",\r\n\t\t\"email\":\"jd.arco3@gmail.com\"\r\n\t},\r\n\t\"questions\":[\r\n    {\r\n\t\t\"id\":1,\r\n        \"survey_id\":1,\r\n\t\t\"answers\":[\r\n\t\t{\r\n\t\t\t\"id\":1\r\n\t\t}],\r\n        \"open\":false\r\n    },\r\n\t{\r\n\t\t\"id\":2,\r\n        \"survey_id\":1,\r\n\t\t\"answers\":[\r\n\t\t{\r\n\t\t\t\"id\":6\t\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\":7\t\r\n\t\t}],\r\n        \"open\":false\r\n    },\r\n\t{\r\n\t\t\"id\":2,\r\n        \"survey_id\":1,\r\n\t\t\"answers\":[\r\n\t\t{\r\n\t\t\t\"id\":6\t\r\n\t\t}],\r\n        \"open\":false\r\n    },\r\n\t{\r\n\t\t\"id\":4,\r\n        \"survey_id\":1,\r\n\t\t\"answers\":[\r\n\t\t{\r\n\t\t\t\"description\":\"Sin comentarios!!\"\r\n\t\t}]\r\n    }]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7050/surveysapi/survey/register",
+					"host": [
+						"localhost"
+					],
+					"port": "7050",
+					"path": [
+						"surveysapi",
+						"survey",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "survey",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:7050/surveysapi/survey/1",
+					"host": [
+						"localhost"
+					],
+					"port": "7050",
+					"path": [
+						"surveysapi",
+						"survey",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
